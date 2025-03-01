@@ -41,29 +41,31 @@ div a:hover{
 }
 
 main{
-    background-color: #d4d4d4;
+    background-color: #f4f4f4;
     text-align: center;
     padding: 20px;
-
+    font-family: Arial;
+    font-weight: 500;
 }
 
-main h3{
-    font-family: Helvetica;
+main h2{
     color: #003366;
-}
-
-main p{
-    font-family: Helvetica;
+    font-weight: bold;
 }
 
 main dl{
     font-weight: bold;
-    font-family: Helvetica;
 }
 
 main ul{
-    font-family: Helvetica;
+    list-style-position: inside;
+    list-style-type: '- ';
+    font-weight: 100;
     padding: 0px;
+}
+
+main li{
+    margin: 15px;
 }
 
 footer{

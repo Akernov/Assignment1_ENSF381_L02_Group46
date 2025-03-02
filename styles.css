@@ -2,11 +2,18 @@ header{
     background-color: #004080;
     padding: 20px;
     margin: 0px;
+    font-family: Helvetica;
     display: flex;
     text-align: right;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 header img{
@@ -15,7 +22,6 @@ header img{
 
 header h1{
     color: white;
-    font-family: Helvetica;
     margin-left: auto;
 }
 
@@ -40,7 +46,12 @@ div a:hover{
     text-decoration: underline;
 }
 
-main{
+main {
+    font-family: Helvetica;
+    background-color: #f4f4f4;
+}
+
+.about{
     background-color: #f4f4f4;
     text-align: center;
     padding: 20px;
@@ -48,23 +59,23 @@ main{
     font-weight: 500;
 }
 
-main h2{
+.about h2{
     color: #003366;
     font-weight: bold;
 }
 
-main dl{
+.about dl{
     font-weight: bold;
 }
 
-main ul{
+.about ul{
     list-style-position: inside;
     list-style-type: '- ';
     font-weight: 100;
     padding: 0px;
 }
 
-main li{
+.about li{
     margin: 15px;
 }
 
@@ -74,4 +85,70 @@ footer{
     padding: 20px;
     text-align: center;
     font-family: Helvetica;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-item{
+    text-align: center;
+    display: block
+}
+.login h2{
+    text-align: center;
+    color: #004080;
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    background-color: #d4d4d4;
+    padding: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 30px;
+    justify-content: center;
+    box-shadow: 2px 2px 4px #b3b3b3;
+}
+
+.username, .password{
+    margin-top: 10px;
+    width: 80%;
+    max-width: 300px;
+    background-color: lightyellow;
+    padding: 10px;
+    border-radius: 5px;
+    border: darkgray 3px;
+}
+
+.login button {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+
+
+.login button:hover {
+    background-color: darkgreen;
+}
+
+.forgot {
+    text-decoration: none;
+    color: #004080
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+select{
+    background-color: lightyellow;
+    border-radius: 5px;
+    padding: 5px;
 }

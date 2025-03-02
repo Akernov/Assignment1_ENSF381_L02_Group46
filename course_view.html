@@ -15,7 +15,7 @@
         </div>
         <main>
             <br><br><br>
-            <form>
+            <form class = "term-container">
                 <label for="term">Select Term:</label>
                 <select id="term">
                     <option value="Spring 2024">Spring 2024</option>
@@ -24,91 +24,96 @@
                     <option value="Winter 2025">Winter 2025</option>
                 </select>
             </form>
-            <h2>Enrolled Courses</h2>
-            <hr>
-            <table style="width: 100%; height: 100%;">
-                <tr>
-                    <td style="width: 33.3%; height: 100%;">
-                        <img src="images/course1.jpg" style="width: 100%; height: 100%;">
-                    </td>
-                    <td style="width: 33.3%; height: 100%;">
-                        <img src="images/course1.jpg" style="width: 100%; height: 100%;">
-                    </td>
-                    <td style="width: 33.3%; height: 100%;">
-                        <img src="images/course1.jpg" style="width: 100%; height: 100%;">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Course Name: Web Development</td>
-                    <td>Course Name: Data Structures</td>
-                    <td>Course Name: DBMS</td>
-                </tr>
-                <tr>
-                    <td>Course Code: WD381</td>
-                    <td>Course Code: DS371</td>
-                    <td>Course Code: DB346</td>
-                </tr>
-                <tr>
-                    <td><a href="attempt_quiz.html">Attempt Quiz</a></td>
-                    <td><a href="attempt_quiz.html">Attempt Quiz</a></td>
-                    <td><a href="attempt_quiz.html">Attempt Quiz</a></td>
-                </tr>
-                <tr>
-                    <td style="width: 33.3%; height: 100%;">
-                        <img src="images/course1.jpg" style="width: 100%; height: 100%;">
-                    </td>
-                    <td style="width: 33.3%; height: 100%;">
-                        <img src="images/course1.jpg" style="width: 100%; height: 100%;">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Course Name: Software Testing</td>
-                    <td>Course Name: Software Architectures</td>
-                </tr>
-                <tr>
-                    <td>Course Code: ST484</td>
-                    <td>Course Code: SA396</td>
-                </tr>
-                <tr>
-                    <td><a href="attempt_quiz.html">Attempt Quiz</a></td>
-                    <td><a href="attempt_quiz.html">Attempt Quiz</a></td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <h2>Pending Invitations</h2>
-                        <hr>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 33.3%; height: 100%;">
-                        <img src="images/course2.jpg" style="width: 100%; height: 100%;">
-                    </td>
-                    <td style="width: 33.3%; height: 100%;">
-                        <img src="images/course2.jpg" style="width: 100%; height: 100%;">
-                    </td>
-                    <td style="width: 33.3%; height: 100%;"></td>
-                </tr>
-                <tr>
-                    <td>Course Name: Data Science</td>
-                    <td>Course Name: Machine Learning</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Course Code: DS102</td>
-                    <td>Course Code: ML105</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td style="width: 16.65%;">
-                        <button type="button" style="background-color: lightgreen;">Accept</button>
-                        <button type="button" style="background-color: lightcoral;">Decline</button>
-                    </td>
-                    <td style="width: 16.65%;">
-                        <button type="button" style="background-color: lightgreen;">Accept</button>
-                        <button type="button" style="background-color: lightcoral;">Decline</button>
-                    </td>
-                </tr>
-            </table>
+            <section class="Enrolled">
+                <!-- Courses in which the student is enrolled -->
+                <!-- Display Course 1, 2, and 3 in the same line -->
+                <h2>Enrolled Courses</h2>
+                <hr>
+                <table>
+                    <tr>
+                        <td>
+                            <div class = "course">
+                                <img src="images/course1.jpg" alt="Course 1" width="250">
+                                <p>Course Name: Web Development</p>
+                                <p>Course Code: WD381</p>
+                                <a href="attempt_quiz.html">Attempt Quiz</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class = "course">
+                                <img src="images/course1.jpg" alt="Course 1" width="250">
+                                <p>Course Name: Data Structures</p>
+                                <p>Course Code: DS371</p>
+                                <a href="attempt_quiz.html">Attempt Quiz</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class = "course">
+                                <img src="images/course1.jpg" alt="Course 1" width="250">
+                                <p>Course Name: DBMS</p>
+                                <p>Course Code: DB346</p>
+                                <a href="attempt_quiz.html">Attempt Quiz</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Display Course 4 and 5 in the same line -->
+                    <tr>
+                        <td>
+                            <div class = "course">
+                                <img src="images/course1.jpg" alt="Course 1" width="250">
+                                <p>Course Name: Software Testing</p>
+                                <p>Course Code: ST484</p>
+                                <a href="attempt_quiz.html">Attempt Quiz</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class = "course">
+                                <img src="images/course1.jpg" alt="Course 1" width="250">
+                                <p>Course Name: Software Architectures</p>
+                                <p>Course Code: SA396</p>
+                                <a href="attempt_quiz.html">Attempt Quiz</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table> 
+            </section>
+            
+            <div>
+            </div>
+            <br>
+            <br>
+            <section class="Enrolled">
+                <!-- Courses in which the student is enrolled -->
+                <!-- Display Course 1, 2, and 3 in the same line -->
+                <h2>Pending Invitations</h2>
+                <hr>
+                <table>
+                    <tr>
+                        <td>
+                            <div class = "course">
+                                <img src="images/course2.jpg" alt="Course 2" width="250">
+                                <p>Course Name: Data Science</p>
+                                <p>Course Code: DS102</p>
+                                <div class = "button-container">
+                                    <button class = "accept">Accept</button>
+                                    <button class = "decline">Decline</button>
+                                </div>
+                            </div>
+                        </td> 
+                        <td>
+                            <div class = "course">
+                                <img src="images/course2.jpg" alt="Course 2" width="250">
+                                <p>Course Name: Machine Learning</p>
+                                <p>Course Code: ML105</p>
+                                <div class = "button-container">
+                                    <button class = "accept">Accept</button>
+                                    <button class = "decline">Decline</button>
+                                </div>
+                            </div>
+                        </td> 
+                    </tr>
+                </table>
+            </section>
         </main>
         <footer>&copy; 2025 LMS. All rights reserved</footer>
     </body>

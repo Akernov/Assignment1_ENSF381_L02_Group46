@@ -51,17 +51,17 @@ main {
     background-color: #f4f4f4;
 }
 
+main h2{
+    text-align: center;
+    color: #003366;
+}
+
 .about{
     background-color: #f4f4f4;
     text-align: center;
     padding: 20px;
     font-family: Arial;
     font-weight: 500;
-}
-
-.about h2{
-    color: #003366;
-    font-weight: bold;
 }
 
 .about dl{
@@ -96,6 +96,7 @@ footer{
     text-align: center;
     display: block
 }
+
 .login h2{
     text-align: center;
     color: #004080;
@@ -110,7 +111,7 @@ footer{
     margin-right: 150px;
     border-radius: 30px;
     justify-content: center;
-    box-shadow: 2px 2px 4px #b3b3b3;
+    box-shadow: 3px 3px 4px #b3b3b3;
 }
 
 .username, .password{
@@ -147,8 +148,71 @@ footer{
     text-decoration: underline;
 }
 
-select{
+.term-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.term-container label {
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.term-container select {
+    display: block;
     background-color: lightyellow;
     border-radius: 5px;
     padding: 5px;
+    font-weight: bold;
 }
+
+.course {
+    background: #e6f2ff;
+    box-shadow: 3px 3px 4px #b3b3b3;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.course a {
+    color: revert;
+    text-decoration: revert;
+}
+
+.button-container {
+    background-color: transparent;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.accept {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.accept:hover {
+    background-color: #265e28;
+}
+
+.decline {
+    background-color: #D32F2F;
+    color: white;
+}
+
+.decline:hover {
+    background-color: #821b1b;
+}
+
+

@@ -242,17 +242,22 @@ footer {
 
 /* Quiz Questions Styling */
 .quiz-question {
-    display: flex;
     flex-direction: column;
     margin-left: 20px;
+    background-color: transparent;
 }
 
 .quiz-option {
     background-color: #cacaca;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    width: fit-content;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto;
+    width: 50%;
+}
+
+.quiz-option-item {
+    background-color: transparent;
 }
 
 /* Buttons Styling */
@@ -264,6 +269,8 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 20px;
+    margin: 0 auto;
+    display: block;
 }
 
 .submit-answer:hover {

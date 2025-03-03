@@ -234,10 +234,16 @@ footer {
     margin-left: 250px;
     margin-right: 250px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 /* Quiz Questions Styling */
 .quiz-question {
+    display: flex;
+    flex-direction: column;
     margin-left: 20px;
 }
 
